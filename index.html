@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" href="./favicon.png">
   <style>
     h1 {
-      padding-top: 2rem;
+      padding-top: 1rem;
       font-family: monospace;
       color: #fff;
     }
@@ -52,71 +52,86 @@
         transform: rotate(360deg);
       }
     }
+
+    @media (min-width: 900px) {
+      .photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0; 
+      }
+
+      .image-wrapper {
+        max-width: 550px;
+        flex: 1 1 1;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>buat dia yang disana</h1>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic1.png" alt="loading..">
+  <div class="photos">
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic1.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic2.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic3.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic4.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic5.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic6.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic7.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic8.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic9.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic10.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic11.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic12.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic13.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic14.png" alt="loading..">
+    </div>
+    <div class="image-wrapper">
+      <div class="spinner"></div>
+      <img src="./img/pic15.png" alt="loading..">
+    </div>
   </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic2.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic3.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic4.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic5.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic6.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic7.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic8.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic9.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic10.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic11.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic12.png" alt"loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic13.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic14.png" alt="loading..">
-  </div>
-  <div class="image-wrapper">
-    <div class="spinner"></div>
-    <img src="./img/pic15.png" alt="loading..">
-  </div>
-
   <script>
     // Hide spinner when image loads
     document.querySelectorAll('.image-wrapper img').forEach(img => {
