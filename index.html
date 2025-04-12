@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>buat orang spesial</title>
+  <title>buat si eta</title>
   <link rel="icon" type="image/png" href="./favicon.png">
   <style>
-    h1 {
+    h1, p {
       padding-top: 1rem;
       font-family: monospace;
       color: #fff;
@@ -32,6 +32,10 @@
       display: block;
       opacity: 0;
       transition: opacity 0.5s ease-in;
+    }
+
+    .image-other img {
+      border-radius: 15px;
     }
 
     .spinner {
@@ -69,7 +73,7 @@
   </style>
 </head>
 <body>
-  <h1>buat dia yang disana</h1>
+  <h1>things u might like</h1>
   <div class="photos">
     <div class="image-wrapper">
       <div class="spinner"></div>
@@ -162,6 +166,9 @@
       </a>
     </div>
   </div>  
+  <h1>honorable mention</h1>
+  <div class="image-other"><img src="./img/roger.jpg"></div>
+  <p>roger taylor (queens) / "roger 4evah"</p>
   <script>
     document.querySelectorAll('.image-wrapper img').forEach(img => {
       img.addEventListener('load', () => {
@@ -176,4 +183,3 @@
   </script>
 </body>
 </html>
-
