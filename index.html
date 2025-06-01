@@ -10,10 +10,15 @@
   <link rel="preload" as="image" href="./img/pic3.webp">
   <link rel="preload" as="image" href="./img/pic4.webp">
   <style>
-    h1, p {
+    h1, h2 {
       padding-top: 1rem;
       font-family: monospace;
       color: #fff;
+    }
+
+    h2 {
+      margin-top: 5px;
+      padding-top: 0px;
     }
 
     body {
@@ -41,6 +46,8 @@
 
     .image-other img {
       border-radius: 15px;
+      margin-bottom: 0.5rem;
+      height: 500px;
     }
 
     .spinner {
@@ -280,7 +287,7 @@
   </div>  
   <h1>honorable mention</h1>
   <div class="image-other"><img src="./img/roger.webp" alt="Roger Taylor"></div>
-  <p>"roger 4evah"</p>
+  <h2 style="padding-bottom: 150px;">"roger 4evah"</h2>
   <script>
     document.querySelectorAll('.image-wrapper img').forEach(img => {
       img.addEventListener('load', () => {
